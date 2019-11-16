@@ -22,7 +22,7 @@ from . import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('',views.index, name='index'), #''(indicate for homePage) is the urls name which have to load
+    path('index',views.index, name='index'), #''(indicate for homePage) is the urls name which have to load
     path('process/',views.process, name='process'), #'about'(indicate for aboutPage) is the urls name which have to load
     path('links/',views.links, name='links'), #'about'(indicate for aboutPage) is the urls name which have to load
     url(r'teststr/',include("teststr.urls"),name='teststr' ), #'about'(indicate for aboutPage) is the urls name which have to load
